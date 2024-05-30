@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Welcome To E-voting</div>
+        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+    </div>
+</header>
+<!-- Services-->
+
+<!-- Portfolio Grid-->
+
+<!-- About-->
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>January 25th, 1950</h4>
+                        <h4 class="subheading">Formation of EC</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted"> Election Commission was formally constituted on January 25th, 1950, a day before India became as Sovereign Democratic Republic. The First Chief Election Commissioner, Shri Sukumar Sen, was appointed on March 21st, 1950.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>November 15th, 1951</h4>
+                        <h4 class="subheading">Electoral Rolls for constituencies</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Electoral Rolls for constituencies were published in all States by November 15th, 1951.  The total number of voters (excluding J&K) was 17,32,13,635 as against the total population of India (excluding J&K), 35,66,91,760 according to 1951 census,. The first General Elections to the Lok Sabha and Vidhan Sabhas were held between October, 1951 and March, 1952. The first Lok Sabha consisting of 497 members was constituted on April 2nd, 1952. The first Rajya Sabha consisting of 216 members was constituted on April 3rd, 1952. </p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/3.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>1951-52 and 1957</h4>
+                        <h4 class="subheading">Ballet System</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">For the first and second General Elections in 1951-52, and 1957, the Election Commission adopted the ‘Balloting System’ of voting.  Under this system, every candidate was allotted a separate ballot box at each polling station in a screened compartment and the voter was required only to drop his ballot paper, the centrally pre-printed ballot papers into the ballot box of the candidate of his choice.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/4.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>1962 - 1982</h4>
+                        <h4 class="subheading">Single Ballot paper</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">From the 3rd General Elections in 1962 onwards, the Commission switched over to ‘marking system’ of voting.  Under this system, a common ballot paper containing the names and election symbols of all contesting candidates is printed on which the voter has to put a mark with an arrow cross mark rubber stamp on or near the symbol of the candidate of his choice.  All the marked ballot papers are put into a common ballot box. </p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/assets/img/about/5.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>1982 - Now</h4>
+                        <h4 class="subheading">EVMs</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">The Electronic Voting Machines (EVMs) were used for the first time in part of Parur Assembly Constituency in Kerala in 1982, on experimental basis. Later, the extensive use of EVMs started in 1998. The EVMs were used at all polling stations in the country in the 14th General Elections to the Lok Sabha in 2004 for the first time. Since then all elections to Lok Sabha and Legislative Assemblies have been held using EVMs. </p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        Your Vote
+                        <br />
+                        Your Right
+                        <br />
+                        Vote wisely
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Team-->
+
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Any problems contact Us.</h3>
+        </div>
+        <form id="contactForm" method="post" action="/contact">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- Name input-->
+                        <input class="form-control" id="name" name="username" type="text" placeholder="Your Name *" required />
+                      
+                    </div>
+                    <div class="form-group">
+                        <!-- Email address input-->
+                        <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required />
+                       
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <!-- Phone number input-->
+                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required/>
+                     
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <!-- Message input-->
+                        <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required></textarea>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Submit success message-->
+            <!---->
+            <!-- This is what your users will see when the form-->
+            <!-- has successfully submitted-->
+            {% if message %}
+            <div class="" id="submitSuccessMessage">
+                <div class="text-center text-white mb-3">
+
+                    <div class="fw-bolder">Form submission successful!</div>
+                </div>
+            </div>
+            {% endif %}
+            <!-- Submit error message-->
+            <!---->
+            <!-- This is what your users will see when there is-->
+            <!-- an error submitting the form-->
+            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+            <!-- Submit Button-->
+            <div class="text-center"><button form="contactForm"  class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+        </form>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; E Voting System 2024</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  {% if message %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+  </script>
+{% endif %}
+
+
+{% endblock %}
